@@ -1,10 +1,10 @@
-from dataset.linear import LinearDataset
+from dataset.regression import RegressionDataset
 
 NUMBER_OF_SAMPLES = 1000
 
 
 def train():
-    dataset = LinearDataset(NUMBER_OF_SAMPLES)
+    dataset = RegressionDataset(NUMBER_OF_SAMPLES)
     X, Y = dataset.generate()
 
 
