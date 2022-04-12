@@ -1,3 +1,4 @@
+import numpy as np
 from sklearn.datasets import make_regression
 
 
@@ -9,7 +10,7 @@ class RegressionDataset:
         self.n_informative = n_informative
         self.n_targets = n_targets
 
-    def generate(self):
+    def generate(self) -> (np.ndarray, np.ndarray):
         return make_regression(n_samples=self.n_samples,
                                n_features=self.n_features,
                                n_informative=self.n_informative,
